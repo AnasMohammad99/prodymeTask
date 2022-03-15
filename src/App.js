@@ -1,9 +1,24 @@
 import React from "react";
-import { Apps } from "@mui/icons-material/";
+import Header from "./Header";
+import "./App.css";
+import Left from "./Left";
+import Right from "./Right";
+import Center from "./Center";
+
 const App = () => {
   return (
     <div>
-      <h2>hello2</h2>
+      <div className="container">
+        <Header />
+        <div className="body">
+          {/* left */}
+          <Left />
+          {/* center */}
+          <Center />
+          {/* right */}
+          <Right />
+        </div>
+      </div>
     </div>
   );
 };

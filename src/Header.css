@@ -1,0 +1,16 @@
+.head {
+  display: flex;
+  margin-bottom: 25px;
+  background: #394264;
+  border-radius: 5px;
+  justify-content: space-between;
+  height: 80px;
+}
+.head__right {
+  display: flex;
+  align-items: center;
+}
+.head__left {
+  display: flex;
+  align-items: center;
+}

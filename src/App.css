@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  background: #1f253d;
 }
-
+.container {
+  width: 950px;
+  height: 1725px;
+  margin: 6em auto;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +40,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
