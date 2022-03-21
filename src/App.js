@@ -1,25 +1,33 @@
 import React from "react";
-import Header from "./Header";
+import { Container, Box } from "@mui/material";
 import "./App.css";
-import Left from "./Left";
-import Right from "./Right";
-import Center from "./Center";
-
+import Header from "./Header/Header";
+import useStyles from "./style";
+import Sidebar from "./Sidebar/Sidebar";
+import Body from "./Body/Body";
+import Cards from "./Cards/Cards";
+import Footer from "./Footer/Footer";
 const App = () => {
+  const { head, main } = useStyles();
   return (
-    <div>
-      <div className="container">
+    <Container>
+      <Box className={head}>
         <Header />
-        <div className="body">
-          {/* left */}
-          <Left />
-          {/* center */}
-          <Center />
-          {/* right */}
-          <Right />
-        </div>
-      </div>
-    </div>
+      </Box>
+      <Box className={main}>
+        <Sidebar />
+        <Body />
+      </Box>
+      <Box>
+        <Cards title={"Recommended Products for you"} />
+      </Box>
+      <Box>
+        <Cards title={"Similer Products"} />
+      </Box>
+      <Box>
+        <Footer />
+      </Box>
+    </Container>
   );
 };
 
