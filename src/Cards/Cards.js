@@ -18,7 +18,7 @@ import {
 } from "@mui/material";
 
 const Cards = ({ title }) => {
-  const { card, card__body, card__img } = useStyles();
+  const { card, card__body } = useStyles();
   let items = [1, 2, 3, 4, 5, 6];
   return (
     <Container sx={{ padding: "0px!important", bgcolor: "#f8f8f8" }}>
